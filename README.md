@@ -24,6 +24,5 @@ The orchestration is entirely managed by Apache Airflow. The process flow is det
 
 ## 🚀 Key Implementation & Optimization Features
 1. **Cloud-Native Resource Allocation:** Utilized custom Kubernetes custom resource definitions (CRD) via YAML to specify compute environments. Configured isolated namespace resources, explicit node selectors, and memory settings.
-2. **Advanced Memory Management:** Mitigated Kubernetes `OOMKilled` (Exit Code 137) errors by balancing JVM limits (`spark.executor.memory`) and configuring container overhead thresholds (`spark.kubernetes.memoryOverhead`) to adapt to heavy Spark data mutations.
-3. **Efficient Event-Driven Orchestration:** Implemented a smart polling structure using asynchronous scheduling modes in Airflow, drastically cutting infrastructure utilization compared to classic blocking threads.
-4. **Parallelized MPP Storage Loads:** Optimized relational DWH data movements by eliminating single-threaded JDBC client patterns. PXF enables concurrent multi-node segment transfers directly from remote cloud object structures.
+2. **Efficient Event-Driven Orchestration:** Implemented a smart polling structure using asynchronous scheduling modes in Airflow, drastically cutting infrastructure utilization compared to classic blocking threads.
+3. **Parallelized MPP Storage Loads:** Optimized relational DWH data movements by eliminating single-threaded JDBC client patterns. PXF enables concurrent multi-node segment transfers directly from remote cloud object structures.
