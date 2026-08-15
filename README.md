@@ -1,7 +1,7 @@
 # Cloud-Native K8s Spark ELT Pipeline & Data Mart Architecture
 
 ## 📌 Overview
-This repository contains a production-grade, cloud-native ELT pipeline that automates data ingestion, distributed batch processing, and high-performance data warehousing. The project implements a modern **Data Lakehouse** pattern by decoupling storage (AWS S3) and cloud-native compute (Apache Spark on Kubernetes), exposing prepared data to downstream analytics via federated queries in Greenplum.
+This repository contains a production-grade, cloud-native ETL pipeline that automates data ingestion, distributed batch processing, and high-performance data warehousing. The project implements a modern **Data Lakehouse** pattern by decoupling storage (AWS S3) and cloud-native compute (Apache Spark on Kubernetes), exposing prepared data to downstream analytics via federated queries in Greenplum.
 
 ## 🏗️ Architecture & Data Flow
 The orchestration is entirely managed by Apache Airflow. The process flow is detailed below:
